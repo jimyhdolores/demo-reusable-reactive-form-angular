@@ -1,0 +1,31 @@
+<div class="container">
+	<mat-card>
+		<mat-card-content>
+			<section class="student">
+				<h2>Alumno:</h2>
+				<span class="student__name">Messi Ronaldo</span>
+			</section>
+
+			<form class="register-form" [formGroup]="formGroup" (ngSubmit)="saveData()">
+				<section class="questions">
+					<mat-slide-toggle formControlName="doYouPayAttentionToClasses"
+						>Presta atención a las clases?</mat-slide-toggle
+					>
+					<mat-slide-toggle formControlName="doYouSubmitYourAssignmentsOnTime"
+						>Presenta sus tareas a tiempo?</mat-slide-toggle
+					>
+					<mat-slide-toggle formControlName="missingClasses">Falta a clases?</mat-slide-toggle>
+				</section>
+				<br />
+				<h3>Datos de los padres</h3>
+				<app-person-data title="Datos del Padre:" formControlName="dataFather" />
+
+				<br />
+				<app-person-data title="Datos de la Madre:" formControlName="dataMother" />
+
+				<br />
+				<button mat-raised-button color="primary">Guardar</button>
+			</form>
+		</mat-card-content>
+	</mat-card>
+</div>
