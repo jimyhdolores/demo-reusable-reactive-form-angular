@@ -1,6 +1,6 @@
 # Reusable Form Controls
 
-Si trabajas con formularios aidados lo mejor es usar el ControlContainer ;)
+Si trabajas con formularios anidados lo mejor es usar el ControlContainer ;)
 
 **Suscríbete a mi canal** 😎
 
